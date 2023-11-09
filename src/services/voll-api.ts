@@ -10,5 +10,5 @@ export function getConsulta() {
 }
 
 export function getProfissional() {
-  return API_URL.get<IProfissional[]>("/profissional/");
+  return API_URL.get<IProfissional[]>("/profissionais/");
 }

@@ -4,7 +4,7 @@ import { getProfissional } from "../services/voll-api";
 export function useProfissionalData() {
     const useQueryProfissional = useQuery({
       queryFn: getProfissional,
-      queryKey: ["Profissional-data"],
+      queryKey: ["profissional-data"],
       retry: 2,
     });
   

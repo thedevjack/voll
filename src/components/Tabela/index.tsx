@@ -21,6 +21,7 @@ const CelulaStyle = styled(TableCell)(() => ({
   }
 }))
 
+
 function Tabela() {
   const { data, isError } = useConsultaData();
 
