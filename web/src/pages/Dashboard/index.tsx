@@ -1,4 +1,3 @@
-
 import Titulo from "../../components/Titulo";
 import Avaliacao from "../../components/Avaliacao";
 import Botao from "../../components/Botao";
