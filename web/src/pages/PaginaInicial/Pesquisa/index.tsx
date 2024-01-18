@@ -16,6 +16,7 @@ background-position: 10px;
 box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 border: none;
+margin-right: 10px;
 width: 40%;
 ::placeholder {
     color: var(--cinza-escuro);
