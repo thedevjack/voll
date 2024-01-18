@@ -1,3 +1,17 @@
+import { useState } from "react";
+import CampoDigitacao from "../../components/CampoDigitacao";
+
 export default function Login() {
-  return <></>;
+  const [email, setEmail] = useState("");
+
+  return (
+    <>
+      <CampoDigitacao
+        valor={email}
+        tipo="text"
+        placeholder="Insira seu endereço de e-mail"
+        onChange={setEmail}
+      />
+    </>
+  );
 }

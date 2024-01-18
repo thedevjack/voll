@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imagemDeFundo from "./ImagemDeFundo.png";
+import { Outlet } from "react-router-dom";
 
 const ContainerPrincipal = styled.div`
   background-image: url(${imagemDeFundo});
@@ -11,6 +12,21 @@ const ContainerPrincipal = styled.div`
   align-items: center;
 `;
 
+const Container = styled.div`
+  background-color: white;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export default function PaginaBaseFormulario() {
-  return <ContainerPrincipal></ContainerPrincipal>;
+  return (
+    <ContainerPrincipal>
+      <Container>
+        <Outlet />
+      </Container>
+    </ContainerPrincipal>
+  );
 }
